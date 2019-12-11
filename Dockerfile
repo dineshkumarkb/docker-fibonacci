@@ -1,4 +1,5 @@
 FROM python:3.7
 WORKDIR '/usr/python'
 COPY ./ ./
-CMD ["python","Fibonacci/FibGen.py"]
+RUN pip3 install flask
+CMD ["python","myhttp/customhttp.py"]

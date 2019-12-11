@@ -1,8 +1,10 @@
 version: '3'
 services:
-    fibanocci:
-      image: test-fib
+    myflask:
+      image: test-flask
       build:
         context: .
+      ports:
+        - 8000:8000
       volumes:
         - .:/usr/python
