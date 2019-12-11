@@ -17,7 +17,7 @@ def hello():
 @app.route('/dinesh',methods=['GET'])
 def get_handler():
     log.info(" This is a GET request ")
-    return "200 Success"
+    return "200   Success"
 
 
 if __name__ == "__main__":
