@@ -1,0 +1,7 @@
+language: python
+sudo: required
+services: docker
+before_install:
+  - docker build -t dineshkumarkb/flaskdocker .
+script:
+  - docker run dineshkumarkb/flaskdocker
