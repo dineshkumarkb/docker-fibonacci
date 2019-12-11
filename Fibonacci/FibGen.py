@@ -24,4 +24,4 @@ class FiboGen(object):
         print(self.c)
 
 if __name__ == "__main__":
-    fib = FiboGen(7)
+    fib = FiboGen(9)

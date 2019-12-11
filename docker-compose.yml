@@ -1,4 +1,8 @@
 version: '3'
 services:
-    web:
-      build: .
+    fibanocci:
+      image: test-fib
+      build:
+        context: .
+      volumes:
+        - .:/usr/python
