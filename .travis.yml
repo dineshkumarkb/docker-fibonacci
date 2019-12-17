@@ -1,5 +1,7 @@
 language: python
 sudo: required
 services: docker
+before_install:
+  - docker build -t dineshkumarkb/multi-test .
 script:
-  - docker build -t dineshkumarkb/flaskdocker .
+  - docker run dineshkumarkb/multi-test

@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mycontainer:
+    build:
+      context: .
+    volumes:
+    - .:/usr/python
+  myimage:
+    image: "redis"
