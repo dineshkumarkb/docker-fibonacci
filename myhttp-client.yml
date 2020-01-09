@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myhttp-client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: myhttp
+      image: dineshkumarkb/myhttp
+      ports:
+        - containerPort: 8000
