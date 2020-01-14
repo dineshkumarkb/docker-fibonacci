@@ -11,8 +11,9 @@ spec:
     metadata:
       labels:
         component: web
-    containers:
-      - name: myhttp
-        image: dineshkumarkb/myhttp
-        ports:
-        - containerPort: 8000
+    spec:
+      containers:
+        - name: myhttp
+          image: dineshkumarkb/myhttp
+          ports:
+            - containerPort: 8000
