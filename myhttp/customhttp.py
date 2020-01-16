@@ -23,6 +23,6 @@ def get_handler():
 if __name__ == "__main__":
     PORT = 8000
     HOST = '0.0.0.0'
-    log.debug(" Server starting...")
-    log.debug(" Server started and listening at port {} ".format(PORT))
+    log.info(" Server starting...")
+    log.info(" CustomHTTP : " + " Server started and listening at port %s " % (PORT))
     app.run(host=HOST,port=PORT,debug=True)
